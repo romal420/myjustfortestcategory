@@ -1,5 +1,5 @@
 {
-    "name": "kalnoy/nestedset",
+    "name": "myjustfortestcategory/nestedset",
     "description": "Nested Set Model for Laravel 5.7 and up",
     "keywords": [
         "laravel",
@@ -11,8 +11,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Alexander Kalnoy",
-            "email": "lazychaser@gmail.com"
+            "name": "romal420",
+            "email": "romalghulam@gmail.com"
         }
     ],
     "require": {
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kalnoy\\Nestedset\\": "src/"
+            "myjustfortestcategory\\Nestedset\\": "src/"
         }
     },
     "require-dev": {
@@ -37,7 +37,7 @@
         },
         "laravel": {
             "providers": [
-                "Kalnoy\\Nestedset\\NestedSetServiceProvider"
+                "myjustfortestcategory\\Nestedset\\NestedSetServiceProvider"
             ]
         }
     },
