@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Capsule\Manager as Capsule;
-use Kalnoy\Nestedset\NestedSet;
+use myjustfortestcategory\nestedset\NestedSet;
 
 class NodeTest extends PHPUnit\Framework\TestCase
 {
@@ -476,8 +476,8 @@ class NodeTest extends PHPUnit\Framework\TestCase
         $node = $this->findCategory('mobile');
         $nodes = Category::whereBetween('_lft', array(8, 17))->get();
 
-        $tree1 = \Kalnoy\Nestedset\Collection::make($nodes)->toTree(5);
-        $tree2 = \Kalnoy\Nestedset\Collection::make($nodes)->toTree($node);
+        $tree1 = \myjustfortestcategory\nestedset\Collection::make($nodes)->toTree(5);
+        $tree2 = \myjustfortestcategory\nestedset\Collection::make($nodes)->toTree($node);
 
         $this->assertEquals(4, $tree1->count());
         $this->assertEquals(4, $tree2->count());
