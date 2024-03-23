@@ -2,7 +2,7 @@
 
 class DuplicateCategory extends \Illuminate\Database\Eloquent\Model
 {
-    use \Kalnoy\Nestedset\NodeTrait;
+    use \myjustfortestcategory\nestedset\NodeTrait;
 
     protected $table = 'categories';
 
